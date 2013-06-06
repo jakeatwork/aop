@@ -6,6 +6,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'jquery-rails'
+gem "activeadmin", ">= 0.5.1"
 gem "thin", ">= 1.5.0"
 gem "pg", ">= 0.15.0"
 gem "rspec-rails", ">= 2.12.2", :group => [:development, :test]
@@ -28,3 +29,4 @@ gem "figaro", ">= 0.6.3"
 gem "better_errors", ">= 0.7.2", :group => :development
 gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri_19, :rbx]
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
+
