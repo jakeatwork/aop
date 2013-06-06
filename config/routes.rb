@@ -1,4 +1,7 @@
 Aop::Application.routes.draw do
+  resources :user_stories
+
+
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   authenticated :user do

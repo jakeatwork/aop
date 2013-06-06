@@ -1,0 +1,39 @@
+<h1>Listing user_stories</h1>
+
+<table>
+  <tr>
+    <th>Story</th>
+    <th>Source</th>
+    <th>Description</th>
+    <th>Feasibility score</th>
+    <th>Benefit score</th>
+    <th>Technical feasibility</th>
+    <th>Other feasibility</th>
+    <th>User benefit</th>
+    <th>Business benefit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_stories.each do |user_story| %>
+  <tr>
+    <td><%= user_story.story %></td>
+    <td><%= user_story.source %></td>
+    <td><%= user_story.description %></td>
+    <td><%= user_story.feasibility_score %></td>
+    <td><%= user_story.benefit_score %></td>
+    <td><%= user_story.technical_feasibility %></td>
+    <td><%= user_story.other_feasibility %></td>
+    <td><%= user_story.user_benefit %></td>
+    <td><%= user_story.business_benefit %></td>
+    <td><%= link_to 'Show', user_story %></td>
+    <td><%= link_to 'Edit', edit_user_story_path(user_story) %></td>
+    <td><%= link_to 'Destroy', user_story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User story', new_user_story_path %>

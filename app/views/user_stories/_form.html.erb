@@ -1,0 +1,19 @@
+<%= simple_form_for(@user_story) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :story %>
+    <%= f.input :source %>
+    <%= f.input :description %>
+    <%= f.input :feasibility_score %>
+    <%= f.input :benefit_score %>
+    <%= f.input :technical_feasibility %>
+    <%= f.input :other_feasibility %>
+    <%= f.input :user_benefit %>
+    <%= f.input :business_benefit %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

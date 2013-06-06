@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Story:</b>
+  <%= @user_story.story %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @user_story.source %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @user_story.description %>
+</p>
+
+<p>
+  <b>Feasibility score:</b>
+  <%= @user_story.feasibility_score %>
+</p>
+
+<p>
+  <b>Benefit score:</b>
+  <%= @user_story.benefit_score %>
+</p>
+
+<p>
+  <b>Technical feasibility:</b>
+  <%= @user_story.technical_feasibility %>
+</p>
+
+<p>
+  <b>Other feasibility:</b>
+  <%= @user_story.other_feasibility %>
+</p>
+
+<p>
+  <b>User benefit:</b>
+  <%= @user_story.user_benefit %>
+</p>
+
+<p>
+  <b>Business benefit:</b>
+  <%= @user_story.business_benefit %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_story_path(@user_story) %> |
+<%= link_to 'Back', user_stories_path %>
