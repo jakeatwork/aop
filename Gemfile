@@ -6,7 +6,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'jquery-rails'
-gem "activeadmin"
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'annotate', ">=2.5.0"
 gem "thin", ">= 1.5.0"
 gem "pg", ">= 0.15.0"
