@@ -19,7 +19,7 @@
 
 <% @user_stories.each do |user_story| %>
   <tr>
-    <td><%= user_story.story %></td>
+    <td><span class="rest-in-place"><%= user_story.story %></span></td>
     <td><%= user_story.source %></td>
     <td><%= user_story.description %></td>
     <td><%= user_story.feasibility_score %></td>
