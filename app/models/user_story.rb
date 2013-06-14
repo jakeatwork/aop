@@ -19,6 +19,8 @@
 
 class UserStory < ActiveRecord::Base
   belongs_to :user
+
+  validates :user_id, presence: true
 	
-  attr_accessible :benefit_score, :business_benefit, :description, :feasibility_score, :other_feasibility, :source, :story, :technical_feasibility, :user_benefit
+  attr_accessible :benefit_score, :business_benefit, :description, :feasibility_score, :other_feasibility, :source, :story, :technical_feasibility, :user_benefit, :user_id
 end
