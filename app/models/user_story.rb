@@ -14,8 +14,11 @@
 #  business_benefit      :integer
 #  created_at            :datetime         not null
 #  updated_at            :datetime         not null
+#  user_id               :integer
 #
 
 class UserStory < ActiveRecord::Base
+  belongs_to :user
+	
   attr_accessible :benefit_score, :business_benefit, :description, :feasibility_score, :other_feasibility, :source, :story, :technical_feasibility, :user_benefit
 end
