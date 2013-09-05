@@ -15,6 +15,7 @@ gem 'jquery-ui-sass-rails'
 gem 'jeditable-rails'
 gem 'best_in_place'
 gem 'activeadmin'
+gem 'thumbs_up'
 gem 'annotate', ">=2.5.0"
 gem "thin", ">= 1.5.0"
 gem "pg", ">= 0.15.0"
