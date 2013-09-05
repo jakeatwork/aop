@@ -2,6 +2,7 @@
 
 <table class="table table-striped">
   <tr>
+    <th>Vote!</th>
     <th>Story</th>
     <th>Source</th>
     <th>Description</th>
@@ -19,6 +20,7 @@
 <% #TODO: fix looping to include best in place code; will be different than the railscast %>
 <% @user_stories.each do |user_story| %>
   <tr>
+    <td><%= link_to('vote for this user story!', vote_up_user_story_path(user_story), :method => :post) %></td>
     <td><%= user_story.story %></td>
     <td><%= user_story.source %></td>
     <td><%= user_story.description %></td>

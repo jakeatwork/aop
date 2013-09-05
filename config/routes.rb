@@ -13,7 +13,11 @@ Aop::Application.routes.draw do
 
   get "user_stories/show"
 
-  resources :user_stories
+  resources :user_stories do
+    member do
+      post :vote_up
+    end
+  end
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 

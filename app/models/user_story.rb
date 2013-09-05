@@ -19,6 +19,7 @@
 
 class UserStory < ActiveRecord::Base
   belongs_to :user
+  acts_as_voteable
 
   validates :user_id, presence: true
 	
