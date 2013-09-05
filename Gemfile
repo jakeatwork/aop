@@ -13,7 +13,7 @@ gem 'jquery-rails', "2.3.0"
 gem 'jquery-ui-rails'
 gem 'jquery-ui-sass-rails'
 gem 'jeditable-rails'
-gem 'rest_in_place'
+gem 'best_in_place'
 gem 'activeadmin'
 gem 'annotate', ">=2.5.0"
 gem "thin", ">= 1.5.0"
